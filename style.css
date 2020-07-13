@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: hsl(204, 43%, 93%);
+ 
+    font-family: 'Karla'  sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    display: grid;
+    grid-template-rows: 45% 55%;
+    grid-template-columns: repeat(2,50%);
+    grid-template-areas: 'white white' 'dark light';
+   align-content: center;
+   justify-content: center;
+    width: 600px;
+   
+
+}
+.join{
+
+    padding: 35px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+    width: 100%;
+    grid-area: white;
+
+
+}
+.box{
+    width: 100%;
+    color: white;
+}
+.monthly{
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 5px;
+    position: relative;
+   
+    padding: 35px 20px 0px 35px;
+}
+
+.why{
+    background-color:hsla(179, 62%, 43%, 0.692);
+    border-bottom-right-radius: 5px;
+    padding: 35px 35px 20px 35px;
+}
+h2{
+    color: hsl(179, 62%, 43%);
+}
+h3{
+    color: white;
+}
+.join >h3{
+    margin: 15px 0;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+.join >p{
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    padding: 0px 10px 0px 0px;
+    line-height: 1.7;
+}
+.box > h3{
+    padding-bottom: 20px;
+}
+button{
+    position: absolute;
+    bottom:30px;
+    padding: 13px;
+    border-radius: 5px;
+    width: 200px;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+
+}
+button:hover {
+    background-color: rgb(138, 163, 24);
+    color: white;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+.box{
+    line-height: 1.4;
+}
+ @media screen and (max-width:700px){
+
+    main{
+    
+      font-size: 14px;
+      
+       
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    width: 280px;
+    height: 100%; 
+    }
+    .box{
+        padding: 30px;
+    }
+    .join{
+        height: 33.33%;
+        width: 100%;
+        padding: 30px ;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .join >p{
+        color: hsl(218, 22%, 67%);
+        font-weight: 400;
+        padding: 0px 10px 0px 0px;
+        line-height: 1.6;
+    }
+    .join >h3{
+        margin: 8px 0;
+        color: hsl(71, 73%, 54%);
+        font-weight: 400;
+    }
+    .monthly{
+        width: 100%;
+        height: 33.33%;
+        position: relative;
+        border-radius:  0px;
+        
+    }
+    .why{
+        width: 100%;
+        height: 33.33%;
+        border-radius: 0px 0px 5px 5px;
+     
+    }
+    .why >p{
+        line-height: 1.6;
+    }
+    button{
+       position: absolute;
+       width: 200px;
+       margin: 0 auto;
+        padding: 10px;
+        bottom: 25px;
+       
+    }
+    button:hover {
+        background-color: rgb(138, 163, 24);
+        color: white;
+        cursor: pointer;
+    }
+    button:focus{
+        outline: none;
+    }
+
+
+}  
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
